@@ -10,6 +10,10 @@ void Main()
 
 	//Ball ball{ Scene::CenterF().x, Scene::CenterF().y, 20.0,  RandomVec2(100) };
 	Player player{ Scene::CenterF().x, Scene::Height() * 0.9, 50.0, 50.0, {300.0,0} };
+
+	Array<Ball> balls;
+
+
 	Array<Block> blocks;
 	for (int32 i = 0; i < 4; ++i)
 	{
@@ -21,6 +25,7 @@ void Main()
 	{
 		player.update();
 		player.draw();
+		player.shoot(balls);
 
 
 

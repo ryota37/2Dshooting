@@ -1,5 +1,6 @@
 ﻿#include <Siv3D.hpp>
 #include "Player.h"
+#include "Ball.h"
 
 Player::Player(double x, double y, double w, double h, Vec2 initialVelocity)
 	:RectF(x, y, w, h), velocity(initialVelocity)
@@ -17,4 +18,10 @@ void Player::update()
 	{
 		x = Min((x + velocity.x * Scene::DeltaTime()), Scene::Width() * 1.0 - 50.0);
 	}
+}
+
+void Player::shoot(Array<Ball>& balls)
+{
+	// Add new ball to balls array when EnterKey pressed.
+	// the ball will be deleted when it hits block or wall
 }

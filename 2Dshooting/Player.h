@@ -7,4 +7,5 @@ private:
 public:
 	Player(double x, double y, double w, double h, Vec2 initialVelocity);
 	void update();
+	void shoot(Array<Ball>& balls);
 };

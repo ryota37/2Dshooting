@@ -21,15 +21,3 @@ void Ball::update()
 	x += (velocity.x * Scene::DeltaTime());
 	y += (velocity.y * Scene::DeltaTime());
 }
-
-void Ball::reflect(bool Xaxis, bool Yaxis)
-{
-	if (Xaxis)
-	{
-		velocity.x *= -1.0;
-	}
-	if (Yaxis)
-	{
-		velocity.y *= -1.0;
-	}
-}

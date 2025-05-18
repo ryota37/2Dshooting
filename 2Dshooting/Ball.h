@@ -13,5 +13,4 @@ public:
 	Vec2 getVelocity();
 
 	void update();
-	void reflect(bool Xaxis, bool Yaxis);
 };
