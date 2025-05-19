@@ -27,6 +27,11 @@ void Main()
 		player.draw();
 		player.shoot(balls);
 
+		for (auto& ball : balls)
+		{
+			ball.update();
+			ball.draw();
+		}
 
 
 	//	// Initialize the objects when the game starts

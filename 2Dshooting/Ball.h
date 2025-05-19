@@ -1,4 +1,7 @@
-﻿#include <Siv3D.hpp>
+﻿#ifndef BALL_H
+#define BALL_H
+
+#include <Siv3D.hpp>
 
 class Ball : public Circle
 {
@@ -14,3 +17,5 @@ public:
 
 	void update();
 };
+
+#endif // BALL_H

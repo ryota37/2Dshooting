@@ -1,4 +1,5 @@
 ﻿#include <Siv3D.hpp>
+#include "Ball.h"
 
 class Player : public RectF
 {
