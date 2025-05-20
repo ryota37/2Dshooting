@@ -22,7 +22,7 @@ void Player::update()
 
 void Player::shoot(Array<Ball>& balls)
 {
-	if (KeyEnter.pressed())
+	if (KeyEnter.down())
 	{
 		balls << Ball{ x, y, 20.0,  {0,-100} };
 	}
