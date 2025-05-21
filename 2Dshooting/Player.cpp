@@ -24,7 +24,7 @@ void Player::shoot(Array<Ball>& balls)
 {
 	if (KeyEnter.down())
 	{
-		balls << Ball{ x, y, 20.0,  {0,-100} };
+		balls << Ball{ x, y, 20.0,  {0,-100} , true};
 	}
 	// Add new ball to balls array when EnterKey pressed.
 	// the ball will be deleted when it hits block or wall

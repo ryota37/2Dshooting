@@ -13,7 +13,6 @@ void Main()
 
 	Array<Ball> balls;
 
-
 	Array<Block> blocks;
 	for (int32 i = 0; i < 4; ++i)
 	{
@@ -31,7 +30,10 @@ void Main()
 		{
 			ball.update();
 			ball.draw();
+			ball.vanish();
 		}
+
+		balls.remove_if([](const Ball& ball) { return !ball.isAlive(); });
 
 
 	//	// Initialize the objects when the game starts
@@ -58,15 +60,6 @@ void Main()
 	//		}
 	//	}
 
-	//	// Collision detection of balls
-	//	if ((ball.x <= ball.r) || (Scene::Width() <= (ball.x + ball.r)))
-	//	{
-	//		ball.reflect(true, false);
-	//	}
-	//	if (ball.y <= ball.r)
-	//	{
-	//		ball.reflect(false, true);
-	//	}
 	//	if (ball.intersects(bar))
 	//	{
 	//		ball.reflect(false, true);
