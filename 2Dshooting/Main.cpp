@@ -61,6 +61,13 @@ void Main()
 
 		balls.remove_if([](const Ball& ball) { return !ball.isAlive(); });
 
+		bool allBroken = std::all_of(blocks.begin(), blocks.end(), [](Block block) { return (block.getBroken()); });
+
+		if (allBroken)
+		{
+			Print << U"Success!!";
+		}
+
 
 	//	// Initialize the objects when the game starts
 	//	if (KeyEnter.down())
