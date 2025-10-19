@@ -67,43 +67,5 @@ void Main()
 		{
 			Print << U"Success!!";
 		}
-
-
-	//	// Initialize the objects when the game starts
-	//	if (KeyEnter.down())
-	//	{
-	//		ball = { Scene::CenterF().x, Scene::CenterF().y, 20.0,  RandomVec2(500) };
-	//		bar = { Scene::CenterF().x, Scene::Height() * 0.9, 200.0, 20.0, {500.0,0} };
-	//		for (auto& block : blocks)
-	//		{
-	//			block.setBroken(false);
-	//		}
-	//	}
-
-	//	// Rendering and update of the objects
-	//	ball.update();
-	//	ball.draw();
-	//	bar.update();
-	//	bar.draw();
-	//	for (auto& block : blocks)
-	//	{
-	//		if (!block.getBroken())
-	//		{
-	//			block.draw();
-	//		}
-	//	}
-
-	//	if (ball.intersects(bar))
-	//	{
-	//		ball.reflect(false, true);
-	//	}
-	//	for (auto& block : blocks)
-	//	{
-	//		if (ball.intersects(block) && !block.getBroken())
-	//		{
-	//			ball.reflect(false, true);
-	//			block.setBroken(true);
-	//		}
-	//	}
 	}
 }
